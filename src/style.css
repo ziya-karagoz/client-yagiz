@@ -1,0 +1,120 @@
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(300deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+  color: rgba(245, 245, 245);
+}
+
+.form-inline {
+display: flex;
+flex-direction: column;
+gap: 6px;
+width: 50%;
+}
+
+
+
+.form-inline label {
+  text-align: left; 
+  color: aliceblue;
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  
+  border: 1px solid rgba(248, 248, 248, 0.7);
+}
+.form-inline select {
+  position: relative;
+  font-family: Arial;
+  border: 1px solid rgb(221, 221, 221, 0.4);
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.form-inline select{
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: rgb(203, 104, 212,0.4);
+  border: 1px solid rgb(221, 221, 221);
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: rgba(220, 137, 212, 0.4);
+}
+.container {
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right {
+    width: 30%;
+    height: 80%;
+    border: 1px solid whitesmoke;
+    padding:  10px;
+    border: 1px solid rgba(248, 248, 248, 0.4);
+}
+.def{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(248, 248, 248, 0.4);
+}
+.def p {
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: whitesmoke;
+}
+
+.def p:first-child {
+    cursor: pointer;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#belge-yukleme {
+  margin:0;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#notify {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  height: 100px;
+  border: 1px solid rgba(254, 254, 254, .8);
+  background-color: rgba(245, 245, 245, .3);
+  border-radius: 5px;
+  margin-top: 20px;
+}
